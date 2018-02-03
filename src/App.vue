@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <text-box></text-box>
-    <key></key>
+    <message></message>
+    <keyboard></keyboard>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Keyboard from './components/Keyboard.vue';
+  import Message from './components/Message.vue';
 
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
+  export default {
+    name: 'app',
+    components: {
+        Keyboard,
+        Message
+    }
   }
-}
 </script>
 
 <style>
