@@ -1,7 +1,11 @@
 {
   "name": "vue-virtual-keyboard",
   "version": "0.0.1",
-  "private": true,
+  "description": "A virtual keyboard for Vue",
+  "license": "MIT",
+  "author": {
+    "name": "Jose Raul Pérez"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
