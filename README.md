@@ -1,5 +1,10 @@
 # Vue Virtual Keyboard
 
+
+## Development
+
+`npm run serve`
+
 ## License
 [MIT](http://opensource.org/licenses/MIT)
 

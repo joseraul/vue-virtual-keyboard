@@ -8,13 +8,15 @@
 
         data: function() {
             return {
-                message: ""
+                message: "",
+                locale: ""
             }
         },
 
         methods: {
-            printSymbol(letter) {
-                this.message += letter;
+            printSymbol(symbol) {
+                this.message += symbol;
+                console.log()
             },
 
             deleteLastElement() {
@@ -23,9 +25,6 @@
         },
 
         created: function() {
-            this.$eventHub.$on('event_print_letter', (letter) => {
-                this.updateContent(letter);
-            });
             this.$eventHub.$on('key_pressed', (key) => {
                 switch(key.action) {
                     case 'delete':
@@ -40,17 +39,5 @@
 </script>
 
 <style scoped>
-    .message {
-        padding: .375rem .75rem;
-        font-size: 1rem;
-        line-height: 1.5;
-        color: #424242;
-        background-color: #fafafa;
-        border: 1px solid #E0E0E0;
-        border-radius: .25rem;
-        display: block;
-        margin: 0 auto;
-        margin-bottom:1.5rem;
-        width: 100%;
-    }
+
 </style>

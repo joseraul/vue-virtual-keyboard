@@ -19,7 +19,7 @@
         name: "keyboard",
 
         components: {
-          Key,
+          Key
         },
 
         data: function() {
@@ -29,10 +29,6 @@
         },
 
         methods: {
-            printLetter: function(event){
-                console.log(event.currentTarget.innerHTML);
-                this.$eventHub.$emit('event_print_letter', event.currentTarget.innerHTML);
-            }
         }
     }
 </script>
