@@ -1,19 +1,21 @@
 <template>
   <div id="app">
-    <message></message>
-    <keyboard></keyboard>
+    <h2>Spanish Keyboard</h2>
+    <input type="text" ref="target" />
+    <keyboard
+            keyboard="es_es"
+            target=""
+    />
   </div>
 </template>
 
 <script>
   import Keyboard from './components/Keyboard.vue';
-  import Message from './components/Message.vue';
 
   export default {
     name: 'app',
     components: {
-        Keyboard,
-        Message
+        Keyboard
     }
   }
 </script>

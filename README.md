@@ -1,5 +1,8 @@
 # Vue Virtual Keyboard
 
+## Properties
+The following properties are supported:
+
 
 ## Development
 

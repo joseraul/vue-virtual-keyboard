@@ -6,7 +6,6 @@
 </template>
 
 <script>
-
     export default {
         name: "key",
 
@@ -40,12 +39,11 @@
         border-radius: 4px;
         background-color: #fafafa;
         border: 1px solid #E0E0E0;
-
-        -webkit-box-shadow: 0px 2px 3px -1px rgba(201,201,201,1);
-        -moz-box-shadow: 0px 2px 3px -1px rgba(201,201,201,1);
-        box-shadow: 0px 2px 3px -1px rgba(201,201,201,1);
     }
     .spacer {
         width: 200px;
+    }
+    .delete {
+
     }
 </style>
