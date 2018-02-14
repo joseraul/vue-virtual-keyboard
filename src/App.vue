@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <h2>Spanish Keyboard</h2>
-    <input type="text" ref="target" />
+    <input type="text" ref="message" />
     <keyboard
             keyboard="es_es"
-            target=""
     />
   </div>
 </template>
@@ -13,10 +12,10 @@
   import Keyboard from './components/Keyboard.vue';
 
   export default {
-    name: 'app',
-    components: {
-        Keyboard
-    }
+      name: 'app',
+      components: {
+          Keyboard
+      }
   }
 </script>
 

@@ -24,7 +24,7 @@
 
         props: {
             keyboard: {required: true, default: 'es_es'},
-            is_dynamic: {type: Boolean, required: false, default: false},
+            is_dynamic: {type: Boolean, required: false, default: false}
         },
 
         data: function() {
@@ -45,12 +45,12 @@
 
             printSymbol(symbol) {
                 this.message += symbol;
-                console.log(this.$refs.target);
-                console.log(this.$el);
+                this.$parent.$refs.message.value = this.message;
             },
 
             deleteLastElement() {
                 this.message = this.message.slice(0, -1);
+                this.$parent.$refs.message.value = this.message;
             }
         },
 

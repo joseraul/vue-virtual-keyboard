@@ -41,9 +41,9 @@
         border: 1px solid #E0E0E0;
     }
     .spacer {
-        width: 200px;
+        width: 220px;
     }
     .delete {
-
+        width: 88px;
     }
 </style>

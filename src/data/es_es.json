@@ -124,7 +124,7 @@
       "symbol": "m"
     },
     {
-      "symbol": " ",
+      "symbol": "⇦",
       "css_class": "delete",
       "action": "delete"
     }
