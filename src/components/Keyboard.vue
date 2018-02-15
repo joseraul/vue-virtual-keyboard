@@ -24,13 +24,15 @@
 
         props: {
             keyboard: {required: true, default: 'es_es'},
-            is_dynamic: {type: Boolean, required: false, default: false}
+            is_dynamic: {type: Boolean, required: false, default: false},
+            message_prop : ''
         },
 
         data: function() {
             return {
                 symbols: this.getKeyboard(),
-                message: ''
+                message: '',
+                prop_content: ''
             }
         },
 
@@ -45,17 +47,17 @@
 
             printSymbol(symbol) {
                 this.message += symbol;
-                this.$parent.$refs.message.value = this.message;
+                this.$root.$emit('update_message', this.message);
             },
 
             deleteLastElement() {
                 this.message = this.message.slice(0, -1);
-                this.$parent.$refs.message.value = this.message;
+                this.$root.$emit('update_message', this.message);
             }
         },
 
         created: function() {
-            this.$eventHub.$on('key_pressed', (key) => {
+            this.$root.$on('key_pressed', (key) => {
                 switch(key.action) {
                     case 'delete':
                         this.deleteLastElement();
@@ -63,7 +65,7 @@
                     default:
                         this.printSymbol(key.symbol);
                 }
-            })
+            });
         }
     }
 </script>

@@ -17,7 +17,7 @@
 
         methods: {
             keyPressed: function(){
-                this.$eventHub.$emit('key_pressed', {
+                this.$root.$emit('key_pressed', {
                     symbol:this.symbol,
                     action:this.action
                 });
